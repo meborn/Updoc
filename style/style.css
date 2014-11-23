@@ -70,12 +70,20 @@ nav {
 	/*width: 90px;*/
 	/*background-color: purple;*/
 	margin:0px 10px 0px 10px;
-	padding:0px;
+	padding:20px 0px 0px 0px;
 	font-family: norwester;
 	font-size: 20px;
 	text-align: right;
-	line-height: 60px;
+	/*line-height: 60px;*/
 	color:#FFFAEE;
+}
+
+#menu ul li:first-child {
+	border-bottom: 1px solid #FE8C24;
+}
+
+#menu ul li:hover {
+	border-bottom: 1px solid #FE8C24;
 }
 
 #logo h1 {
@@ -105,7 +113,7 @@ nav {
 }
 
 #home-page-big-text {
-	padding-top: 200px;
+	padding-top: 180px;
 }
 
 #home-page-big-text h1 {
@@ -114,4 +122,22 @@ nav {
 	font-family: norwester;
 	color:#FFFAEE;
 	font-size: 110px;
+}
+
+#home-page-med-text h3 {
+	font-family: dosis;
+	font-size: 52px;
+	margin:0px;
+	padding:0px 0px 0px 10px;
+	position:relative;
+	bottom:20px;
+}
+
+.my-circles {
+	display: inline-block;
+	width:120px;
+	height:120px;
+	border:2px solid #FE8C24;
+	border-radius:60px;
+	margin-right: 20px;
 }
