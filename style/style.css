@@ -1,0 +1,83 @@
+@font-face {
+	font-family: norwester;
+	src: url(fonts/norwester/norwester.otf);
+}
+
+@font-face {
+	font-family: dosis;
+	src: url(fonts/dosis/Dosis-ExtraBold.otf);
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color: #333333;
+}
+#home-page-image-container {
+	width:100%;
+	height:1000px;
+	position: relative;
+	background-image: url(../images/home/home-page-photo.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	/*background-size: 1600px 1068px;*/
+	margin:0px;
+	padding:0px;
+}
+
+#home-page-content {
+	padding:0px;
+	width:960px;
+	margin:0px auto;
+}
+
+#logo {
+	display:inline-block;
+	position: relative;
+	width:350px;
+	height:60px;
+	background-color: blue;
+}
+
+#menu {
+	display:inline-block;
+	width:610;
+}
+
+#logo h1 {
+	display: inline-block;
+	font-family: norwester;
+	margin:0px;
+	padding:0px;
+	position: absolute;
+	top:0px;
+	line-height: 60px;
+	font-size: 35px;
+	color: #FE8C24;
+	/*background-color: red;*/
+}
+
+#logo h2 {
+	display: inline-block;
+	font-family: dosis;
+	font-size: 32px;
+	margin:0px;
+	padding:0px;
+	position: absolute;
+	top:0px;
+	left:245px;
+	line-height: 60px;
+	color:#FFFAEE;
+}
+
+#home-page-big-text {
+	padding-top: 200px;
+}
+
+#home-page-big-text h1 {
+	padding:0px;
+	margin:0px;
+	font-family: norwester;
+	color:#FFFAEE;
+	font-size: 110px;
+}
