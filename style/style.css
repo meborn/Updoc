@@ -158,3 +158,16 @@ nav {
 	background-image: url(../images/home/scissors-med.png);
 	background-repeat: no-repeat;
 }
+
+#home-page-springs {
+	background-image: url(../images/home/updoc-pic-2-edited.jpg);
+	width:1200px;
+	height:426px;
+	margin:0px auto;
+}
+
+#home-page-fade {
+	width:1200px;
+	height:426px;
+	background-color: rgba(51, 51, 51, .5);
+}
