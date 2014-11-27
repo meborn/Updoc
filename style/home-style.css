@@ -1,0 +1,160 @@
+#home-page-image-container {
+	width:1200px;
+	height:801px;
+	position: relative;
+	background-image: url(../images/home/home-page-photo.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	/*background-size: 1600px 1068px;*/
+	margin:0px auto;
+	padding:0px;
+}
+
+#home-page-content {
+	padding:0px;
+	width:960px;
+	margin:0px auto;
+}
+
+#menu ul li:first-child {
+	border-bottom: 1px solid #FE8C24;
+}
+
+#home-page-big-text {
+	padding-top: 180px;
+}
+
+#home-page-big-text h1 {
+	padding:0px;
+	margin:0px;
+	font-family: norwester;
+	color:#FFFAEE;
+	font-size: 110px;
+}
+
+#home-page-med-text h3 {
+	font-family: dosis;
+	font-size: 52px;
+	margin:0px;
+	padding:0px 0px 0px 10px;
+	position:relative;
+	bottom:20px;
+}
+
+#home-page-scissors {
+	width:1200px;
+	height:285px;
+	background-color: #FFFAEE;
+	margin:0px auto;
+	padding-top: 50px;
+}
+
+#scissors-box {
+	border:2px solid #333333;
+	width:960px;
+	height:235px;
+	margin:0px auto;
+	background-image: url(../images/home/scissors-med.png);
+	background-repeat: no-repeat;
+	position:relative;
+}
+
+#scissors-text {
+	width:300px;
+	/*background-color: red;*/
+	position: absolute;
+	top:10px;
+	right:25px;	
+}
+
+#scissors-text a {
+	width:250px;
+	height:40px;
+	margin:10px 0px;
+	text-align: center;
+	font-family: dosis;
+	color:#333333;
+	border:2px solid #333333;
+	font-size: 28px;
+	text-decoration: none;
+	display: block;
+}
+
+#scissors-box h3 {
+	font-family: dosis;
+	color: #FE8C24;
+	font-size: 52px;
+	position: absolute;
+	top:10px;
+	left:55px;
+	padding:0px;
+	margin:0px;
+}
+
+#scissors-text h2 {
+	margin:0px;
+	padding:0px;
+	font-family: norwester;
+	color:#333333;
+	font-size: 42px;
+}
+
+#home-page-springs {
+	background-image: url(../images/home/updoc-pic-2-edited.jpg);
+	width:1200px;
+	height:426px;
+	margin:0px auto;
+}
+
+#home-page-fade {
+	width:1200px;
+	height:426px;
+	background-color: rgba(51, 51, 51, .5);
+}
+
+#springs-container {
+	width:960px;
+	height:326px;
+	margin:0px auto;
+	padding:50px 0px;
+	position: relative;
+}
+
+#springs-box {
+	width:480px;
+	height:326px;
+	border:2px solid #FFFAEE;
+	background-color: rgba(51, 51, 51, .5);
+}
+
+#springs-box h3 {
+	font-family: norwester;
+	font-size: 42px;
+	color:#FFFAEE;
+	text-align: center;
+	padding:0px;
+	margin:10px 0px 0px 0px;
+
+}
+
+#about-box p {
+	font-family: volkron;
+	font-size: 20px;
+	color: #FFFAEE;
+	padding:10px 30px;
+}
+
+#springs-container a {
+	position: absolute;
+	top:188px;
+	right:100px;
+	height:50px;
+	width:200px;
+	font-size: 32px;
+	font-family: dosis;
+	text-decoration: none;
+	border: 2px solid #FFFAEE;
+	color: #FFFAEE;
+	text-align: center;
+	background-color: rgba(51, 51, 51, .5);
+}

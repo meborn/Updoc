@@ -3,12 +3,14 @@
 	<head>
 		<title>Upholstery Doctor</title>
 		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/home-style.css">
 	</head>
 	<body>
 		<div id="home-page-image-container">
 			<!-- <img src="images/home/home-page-photo.jpg"> -->
+			<?php include('includes/header.php'); ?>
 			<div id="home-page-content">
-				<nav>
+				<!-- <nav>
 					<div id="logo">
 						<img src="images/home/updoc-logo-icon.png" >
 						<h1>UPHOLSTERY</h1>
@@ -16,15 +18,16 @@
 					</div>
 					<div id="menu">
 						<ul>
-							<li>HOME</li>
+							<li><a href="#">HOME</a></li>
 							<li>ABOUT</li>
-							<li>SERVICES</li>
+							<li><a href="services.html">SERVICES</a></li>
 							<li>GALLERY</li>
 							<li>QUOTE</li>
 							<li>CONTACT</li>
 						</ul>
 					</div>
-				</nav>
+				</nav> -->
+				
 				<div id="home-page-big-text">
 					<h1>THE DOCTOR WILL</h1>
 					<h1>SEE YOU NOW</h1>
