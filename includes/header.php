@@ -13,7 +13,7 @@
 					<li><a href="services.php">SERVICES</a></li>
 					<li>GALLERY</li>
 					<li>QUOTE</li>
-					<li>CONTACT</li>
+					<li><a href="contact.php">CONTACT</a></li>
 				</ul>
 			</div>
 		</nav>
