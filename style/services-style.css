@@ -33,29 +33,15 @@
 	border-bottom: 1px solid #FE8C24;
 }
 
-#services-image {
+#header-container {
 	background-image: url(../images/services/upholstery-tools.jpg);
-	width:1200px;
-	height:420px;
-	/*margin-top: 50px;*/
 }
 
 #services-content {
 	width:960px;
 	margin:0px auto;
-	padding:20px 0px;
-}
-
-#header-intro {
-	width:960px;
-	margin:0px auto;
-}
-
-#header-intro h3 {
-	font-family: norwester;
-	/*font-family: dosis;*/
-	font-size: 92px;
-	color:#FFFAEE;
+	padding:0px;
+	/*padding:20px 0px;*/
 }
 
 .service-state {
@@ -74,7 +60,7 @@
 
 
 #services-content div {
-	width:940px;
+	width:930px;
 	height:400px;
 	margin:50px auto;
 	/*padding-top: 50px;*/

@@ -1,41 +1,26 @@
-/*body {
-	margin:0px;
-	padding:0px;
-	background-color: #FFFAEE;
-}*/
-
 
 #contact-container {
 	width:1200px;
-	height:837px;
 	margin:0px auto;
-	/*background-image: url(../images/contact/contact-image.JPG);
-	background-repeat: no-repeat;*/
 	background-color: #FFFAEE;
+	padding-bottom: 50px;
 }
 
-/*#contact-container-fade {
-	width:1200px;
-	height:837px;
-	background-color: rgba(51, 51, 51, 0);
-}*/
-
-#contact-menu {
-	width:1200px;
-	background-image: url(../images/services/updoc-menu-bg.jpg);
+#header-container {
+	background-image: url(../images/contact/updoc-business-card-2.jpg);
 }
+
+
 
 #menu ul li:nth-child(6) {
 	border-bottom: 1px solid #FE8C24;
 }
 
 #contact-content {
-	width: 910px;
+	width: 900px;
 	height:450px;
-	margin:100px auto;
+	margin:20px auto;
 	border:2px solid #333333;
-	/*background-color: rgba(51, 51, 51, 0.8);*/
-	/*background-color: rgba(255, 250, 238, .9);*/
 	padding:25px;
 }
 
@@ -78,7 +63,7 @@
 #contact-form {
 	/*display: inline-block;*/
 	float: left;
-	width:465px;
+	width:455px;
 	height:450px;
 	/*background-color: green;*/
 	padding-left:25px;

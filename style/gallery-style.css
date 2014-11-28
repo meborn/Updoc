@@ -1,0 +1,16 @@
+#gallery-container {
+	width:1200px;
+	margin:0px auto;
+	background-color: #FFFAEE;
+	padding-bottom: 50px;
+}
+
+#header-container {
+	background-image: url(../images/rolls-faberic.jpg);
+}
+
+
+
+#menu ul li:nth-child(4) {
+	border-bottom: 1px solid #FE8C24;
+}

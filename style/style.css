@@ -29,6 +29,33 @@ body {
 	margin:0px auto;
 }
 
+#header-container {
+	width:1200px;
+	height:420px;
+}
+
+#header-intro {
+	width:960px;
+	margin:0px auto;
+}
+
+#header-intro h3 {
+	font-family: norwester;
+	font-size: 92px;
+	color:#FFFAEE;
+	position: relative;
+	top:125px;
+}
+
+#content {
+	width:960px;
+	/*height:600px;*/
+	margin:0px auto;
+	margin-top:50px;
+	padding-bottom: 50px;
+	/*background-color: blue;*/
+}
+
 
 nav {
 	margin:0px;
