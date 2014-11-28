@@ -8,9 +8,9 @@
 	<body>
 		<div id="home-page-image-container">
 			<!-- <img src="images/home/home-page-photo.jpg"> -->
-			<?php include('includes/header.php'); ?>
+			
 			<div id="home-page-content">
-				<!-- <nav>
+				<nav>
 					<div id="logo">
 						<img src="images/home/updoc-logo-icon.png" >
 						<h1>UPHOLSTERY</h1>
@@ -26,7 +26,7 @@
 							<li>CONTACT</li>
 						</ul>
 					</div>
-				</nav> -->
+				</nav>
 				
 				<div id="home-page-big-text">
 					<h1>THE DOCTOR WILL</h1>

@@ -20,4 +20,6 @@
 			</div>
 		</div>
 	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="javascript/mobile-menu.js"></script>
 </html>

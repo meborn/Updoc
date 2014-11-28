@@ -4,7 +4,43 @@
 	background-color: #333333;
 }*/
 
-#home-page-image-container {
+@media (max-width: 768px) {
+	#home-page-image-container {
+		width:100%;
+		height:514px;
+		position:relative;
+		background-image: url(../images/home/home-page-xs.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin:0px auto;
+		padding:0px;
+	}
+
+	#home-page-content {
+		padding:0px;
+		width:95%;
+		margin:0px auto;
+	}
+
+	#home-page-big-text {
+		width:70%;
+		margin:0px;
+		padding-top: 70px;
+	}
+
+	#home-page-big-text h1 {
+		width:100%;
+		padding:0px;
+		margin:0px;
+		font-family: norwester;
+		color:#FFFAEE;
+		font-size: 52px;
+		/*text-align: center;*/
+	}
+}
+
+@media (min-width: 1200px) {
+	#home-page-image-container {
 	width:1200px;
 	height:801px;
 	position: relative;
@@ -164,3 +200,6 @@
 	text-align: center;
 	background-color: rgba(51, 51, 51, .5);
 }
+
+}
+

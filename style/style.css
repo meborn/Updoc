@@ -19,135 +19,310 @@ body {
 	background-color: #333333;
 }
 
-#header-fade {
+@media (max-width: 768px) {
+	#header-container {
+		width:100%;
+		height:220px;
+	}
+
+	#header-fade {
+		width:100%;
+		background-color: rgba(51, 51, 51, 0.6);
+	}
+
+	#header-wrapper {
+		width:95%;
+		margin:0px auto;
+	}
+
+	nav {
+		margin:0px;
+		padding:0px;
+		position: relative;
+	}
+
+	#logo {
+		width:95%;
+		max-width: 350px;
+		margin:0px auto;
+		position: relative;
+		height:60px;
+	}
+
+	#logo h1 {
+		display: inline-block;
+		font-family: norwester;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		line-height: 60px;
+		font-size: 35px;
+		color: #FE8C24;
+		/*background-color: red;*/
+	}
+
+	#logo h2 {
+		display: inline-block;
+		font-family: dosis;
+		font-size: 32px;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		left:245px;
+		line-height: 60px;
+		color:#FFFAEE;
+	}
+
+	#menu {
+		visibility: hidden;
+		width:100%;
+		height:60px;
+		/*background-color: red;*/
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		top:0;
+	}
+
+	#mobile-menu-btn {
+		visibility: visible;
+		width:95%;
+		max-width: 400px;
+		margin: 50px auto;
+		border:2px solid #FFFAEE;
+		font-family: norwester;
+		color:#FFFAEE;
+		font-size: 42px;
+		text-align: center;
+	}
+
+	#mobile-menu {
+		visibility:hidden;
+		width:100%;
+		height:100%;
+		color:#FFFAEE;
+		background-color: rgba(51, 51, 51, 1);
+		position:absolute;
+		z-index: 100;
+		top:60px;
+	}
+
+	#mobile-menu ul {
+		padding:0px;
+		margin:0px;
+		width:100%;
+		position: absolute;
+		top:60px;
+	}
+
+	#mobile-menu ul li {
+		width:95%;
+		height:40px;
+		/*max-width: 350px;*/
+		border:2px solid #FFFAEE;
+		margin:20px auto;
+		list-style: none;
+		font-family: norwester;
+		font-size: 32px;
+		text-align: center;
+	}
+
+	#mobile-menu a {
+		text-decoration: none;
+		color:#FFFAEE;
+	}
+	#mobile-exit {
+		width:40px;
+		height:40px;
+		border:2px solid #FFFAEE;
+		border-radius:20px;
+		position: absolute;
+		top:10px;
+		right:10px;
+		text-align: center;
+		font-size: 32px;
+	}
+
+	#header-intro {
+		visibility: hidden;
+		width:100%;
+		height:220px;
+		margin:0px auto;
+		/*background-color: blue;*/
+		padding:0px;
+		position: relative;
+	}
+
+	#header-intro h3 {
+		font-family: norwester;
+		font-size: 92px;
+		color:#FFFAEE;
+		position: absolute;
+		bottom: 20px;
+		margin:0px;
+		text-align: center;
+	}
+
+	#content {
+		width:100%;
+		/*height:600px;*/
+		margin:0px auto;
+		margin-top:50px;
+		padding-bottom: 50px;
+		/*background-color: blue;*/
+	}
+
+}
+
+@media (min-width: 1200px) {
+	#header-fade {
 	background-color: rgba(51, 51, 51, 0.6);
 	width:1200px;
+	}
+
+	#header-wrapper {
+		width:960px;
+		margin:0px auto;
+	}
+
+	#header-container {
+		width:1200px;
+		height:420px;
+		position:relative;
+	}
+
+	#header-intro {
+		width:960px;
+		margin:0px auto;
+	}
+
+	#header-intro h3 {
+		font-family: norwester;
+		font-size: 92px;
+		color:#FFFAEE;
+		position: absolute;
+		bottom:20px;
+		margin:0px;
+	}
+
+	#content {
+		width:960px;
+		/*height:600px;*/
+		margin:0px auto;
+		margin-top:50px;
+		padding-bottom: 50px;
+		/*background-color: blue;*/
+	}
+
+	nav {
+		margin:0px;
+		padding:0px;
+		position: relative;
+	}
+
+	#logo {
+		display:inline-block;
+		position: relative;
+		width:350px;
+		height:60px;
+		/*background-color: blue;*/
+	}
+
+	#mobile-menu-btn {
+		visibility: hidden;
+	}
+
+	#mobile-menu {
+		visibility: hidden;
+	}
+
+	#menu {
+		display:inline-block;
+		width:600px;
+		height:60px;
+		/*background-color: red;*/
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		top:0;
+	}
+
+	#menu ul {
+		display: inline-block;
+		height:60px;
+		margin:0px;
+		padding-left:40px;
+		float:right;
+		/*background-color: yellow;*/
+	}
+
+	#menu ul li {
+		display: inline-block;
+		/*width: 90px;*/
+		/*background-color: purple;*/
+		margin:0px 10px 0px 10px;
+		padding:20px 0px 0px 0px;
+		font-family: norwester;
+		font-size: 20px;
+		text-align: right;
+		/*line-height: 60px;*/
+		color:#FFFAEE;
+	}
+
+	#menu ul li:hover {
+		border-bottom: 1px solid #FE8C24;
+	}
+	#menu a {
+		text-decoration: none;
+		color:#FFFAEE;
+	}
+
+	#logo h1 {
+		display: inline-block;
+		font-family: norwester;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		line-height: 60px;
+		font-size: 35px;
+		color: #FE8C24;
+		/*background-color: red;*/
+	}
+
+	#logo h2 {
+		display: inline-block;
+		font-family: dosis;
+		font-size: 32px;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		left:245px;
+		line-height: 60px;
+		color:#FFFAEE;
+	}
+
+
+
+	.my-circles {
+		display: inline-block;
+		width:120px;
+		height:120px;
+		border:2px solid #FE8C24;
+		border-radius:60px;
+		margin-right: 20px;
+	}
+
+
 }
 
-#header-wrapper {
-	width:960px;
-	margin:0px auto;
-}
-
-#header-container {
-	width:1200px;
-	height:420px;
-}
-
-#header-intro {
-	width:960px;
-	margin:0px auto;
-}
-
-#header-intro h3 {
-	font-family: norwester;
-	font-size: 92px;
-	color:#FFFAEE;
-	position: relative;
-	top:125px;
-}
-
-#content {
-	width:960px;
-	/*height:600px;*/
-	margin:0px auto;
-	margin-top:50px;
-	padding-bottom: 50px;
-	/*background-color: blue;*/
-}
-
-
-nav {
-	margin:0px;
-	padding:0px;
-	position: relative;
-}
-
-#logo {
-	display:inline-block;
-	position: relative;
-	width:350px;
-	height:60px;
-	/*background-color: blue;*/
-}
-
-#menu {
-	display:inline-block;
-	width:600px;
-	height:60px;
-	/*background-color: red;*/
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	top:0;
-}
-
-#menu ul {
-	display: inline-block;
-	height:60px;
-	margin:0px;
-	padding-left:40px;
-	float:right;
-	/*background-color: yellow;*/
-}
-
-#menu ul li {
-	display: inline-block;
-	/*width: 90px;*/
-	/*background-color: purple;*/
-	margin:0px 10px 0px 10px;
-	padding:20px 0px 0px 0px;
-	font-family: norwester;
-	font-size: 20px;
-	text-align: right;
-	/*line-height: 60px;*/
-	color:#FFFAEE;
-}
-
-#menu ul li:hover {
-	border-bottom: 1px solid #FE8C24;
-}
-#menu a {
-	text-decoration: none;
-	color:#FFFAEE;
-}
-
-#logo h1 {
-	display: inline-block;
-	font-family: norwester;
-	margin:0px;
-	padding:0px;
-	position: absolute;
-	top:0px;
-	line-height: 60px;
-	font-size: 35px;
-	color: #FE8C24;
-	/*background-color: red;*/
-}
-
-#logo h2 {
-	display: inline-block;
-	font-family: dosis;
-	font-size: 32px;
-	margin:0px;
-	padding:0px;
-	position: absolute;
-	top:0px;
-	left:245px;
-	line-height: 60px;
-	color:#FFFAEE;
-}
 
 
 
-.my-circles {
-	display: inline-block;
-	width:120px;
-	height:120px;
-	border:2px solid #FE8C24;
-	border-radius:60px;
-	margin-right: 20px;
-}
+
 
 
 
