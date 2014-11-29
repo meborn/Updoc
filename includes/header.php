@@ -1,3 +1,4 @@
+
 <div id="header-fade">
 	<div id="header-wrapper">
 		<nav>
@@ -17,25 +18,23 @@
 					<li><a href="contact.php">CONTACT</a></li>
 				</ul>
 			</div>
+			<div id="mobile-menu-btn">
+				<span><?php echo $page ?></span>
+				<div id="mobile-menu-icon">
+					<div class="mobile-menu-bar">
+					</div>
+					<div class="mobile-menu-bar">
+					</div>
+					<div class="mobile-menu-bar">
+					</div>
+					<div class="mobile-menu-bar">
+					</div>
+				</div>
+			</div>
+			
 		</nav>
 		
 	</div>
 	
 </div>
-<div id="mobile-menu-btn">
-	<span>MENU</span>
-</div>
 
-<div id="mobile-menu">
-	<div id="mobile-exit">
-		<span>X</span>
-	</div>
-	<ul>
-		<li><a href="index.php">HOME</a></li>
-		<li><a href="about.php">ABOUT</a></li>
-		<li><a href="services.php">SERVICES</a></li>
-		<li><a href="gallery.php">GALLERY</a></li>
-		<li><a href="quote.php">QUOTE</a></li>
-		<li><a href="contact.php">CONTACT</a></li>
-	</ul>
-</div>

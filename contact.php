@@ -12,10 +12,26 @@ if($_POST["message"]) {
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 	<body>
-		<div id="contact-container">
-			<!-- <div id="contact-container-fade"> -->
-				<div id="header-container">
+		<?php $page = 'Contact' ?>
+		<div id="container">
+			<div id="header-container">
+				<div id="header-nav">
 					<?php include('includes/header.php'); ?>
+				</div>
+				<div id="header-intro">
+					<h1>Say Hello.</h1>
+				</div>
+			</div>
+
+			<div id="content">
+				<div id="contact-content">
+					
+				</div>
+			</div>
+		</div>
+		<?php include('includes/mobile-menu.php'); ?>
+		<!-- <div id="contact-container">
+				<div id="header-container">
 					<div id="header-intro">
 						<h3>Say Hello.</h3>
 					</div>
@@ -48,12 +64,13 @@ if($_POST["message"]) {
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
-		</div>
+		</div> -->
 		<!-- <form method="post" action="contact.php">
 			<textarea name="message"></textarea>
 			<input type="submit">
 		</form> -->
 	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="javascript/contact.js"></script>
+	<script src="javascript/mobile-menu.js"></script>
 </html>

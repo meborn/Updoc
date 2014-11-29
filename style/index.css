@@ -1,0 +1,6 @@
+@media only all and (max-device-width: 767px) {
+	#header-nav {
+		background-image: url(../images/home/home-page-xs.jpg);
+	}	
+
+}

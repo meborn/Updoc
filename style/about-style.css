@@ -1,43 +1,16 @@
-#about-container {
-	width:1200px;
-	margin:0px auto;
-	background-color: #FFFAEE;
-	padding-bottom: 50px;
+
+
+
+@media only all and (max-device-width: 767px) {
+	#header-nav {
+		background-image: url(../images/contact/contact-image.png);
+	}	
+
 }
 
-#header-container {
-	background-image: url(../images/contact/contact-image.png);
-}
 
-#menu ul li:nth-child(2) {
-	border-bottom: 1px solid #FE8C24;
-}
-
-#about-content {
-	width:940px;
-	height:433px;
-	padding:10px;
-	border:2px solid #333333;
-}
-
-@media (max-width: 768px) {
-	#about-container {
-		width:100%;
-		margin:0px auto;
-		background-color:#FFFAEE;
-	}
-
-	#about-content {
-		width:90%;
-		max-width: 400px;
-		margin:0px auto;
-		border:2px solid #333333;
-	}
-
-	#about-content img {
-		display: block;
-		width:100%;
-		max-width: 400px;
-		margin:0px auto;
+@media only all and (min-device-width: 1200px) {
+	#header-container {
+		background-image: url(../images/contact/contact-image.png);
 	}
 }

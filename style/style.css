@@ -19,33 +19,248 @@ body {
 	background-color: #333333;
 }
 
-@media (max-width: 768px) {
+@media only all and (max-device-width: 767px) {
+	body {
+		background-color: #333333;
+		margin:0px;
+	}
+
+	#container {
+		width:100%;
+		height:100%;
+	}
+
 	#header-container {
 		width:100%;
-		height:220px;
+		height:180px;
+		position: fixed;
+		top:0px;
+		box-shadow: 0px 5px 10px #444;
+		z-index: 10;
+	}
+
+	#header-nav {
+		width:100%;
+		height:180px;
+		
+		position: absolute;
+		top:0px;
 	}
 
 	#header-fade {
 		width:100%;
-		background-color: rgba(51, 51, 51, 0.6);
+		height:180px;
+		background-color: rgba(51, 51, 51, 0.7);
+		margin: 0px;
+		position: absolute;
+		top:0px;
 	}
 
 	#header-wrapper {
-		width:95%;
-		margin:0px auto;
+		width:100%;
+		height:180px;
+		position: absolute;
+		top:0px;
 	}
 
 	nav {
-		margin:0px;
-		padding:0px;
-		position: relative;
+		display: block;
+		width:100%;
+		height:180px;
+		position: absolute;
+		top: 0px;
 	}
 
 	#logo {
+		display: inline-block;
+		width: 50%;
+		height:180px;
+		position:absolute;
+		left:10px;
+		top:0px;
+		margin: 0px;
+		padding:0px;
+		/*background-color: blue;*/
+	}
+
+	#logo img {
+		width:95px;
+		position: absolute;
+		bottom: 0px;
+		left:10px;
+		margin: 0px;
+	}
+
+	#logo h1 {
+		display: inline-block;
+		font-family: norwester;
+		font-size: 82px;
+		color:#FE8C24;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		left:15px;
+	}
+
+	#logo h2 {
+		margin:0px;
+		font-family:dosis;
+		font-size: 72px;
+		color:#FFFAEE;
+		position: absolute;
+		left:115px;
+		bottom:0px;
+	}
+
+	#menu {
+		visibility: hidden;
+		width:0px;
+		height:0px;
+	}
+
+	#menu ul {
+		width:0px;
+		height:0px;
+	}
+
+	#menu ul li {
+		width:0px;
+		height:0px;
+	}
+
+	#menu a {
+		width:0px;
+		height:0px;
+	}
+
+
+	#mobile-menu-btn {
+		display: inline-block;
+		position: absolute;
+		top:0px;
+		right:20px;
+		width:50%;
+		height:180px;
+		margin: 0px;
+		padding: 0px;
+		/*background-color: red;*/
+	}
+
+	#mobile-menu-btn span {
+		position: absolute;
+		right:150px;
+		line-height: 180px;
+		font-family: dosis;
+		font-size: 38px;
+		color:#FFFAEE;
+	}
+
+	#mobile-menu-icon {
+		width:120px;
+		height: 100px;
+		border:2px solid #FFFAEE;
+		position: absolute;
+		right:10px;
+		top:35px;
+		padding-top:5px;
+	}
+
+	#mobile-menu-icon.orange {
+		background-color: #FE8C24;
+	}
+
+	.mobile-menu-bar {
+		width:110px;
+		height:10px;
+		margin:10px auto;
+		background-color: #FFFAEE;
+	}
+
+	#mobile-menu {
+		display: none;
+		/*visibility: hidden;*/
+		width:100%;
+		height:800px;
+		position: absolute;
+		top:180px;
+		background-color: #333333;
+		z-index: 10;
+	}
+
+	#mobile-menu ul {
+		width:100%;
+		margin:0px;
+		padding:0px;
+	}
+
+	#mobile-menu ul li {
+		width:100%;
+		margin:10px 0px;
+		font-size: 92px;
+		font-family: norwester;
+		text-align: center;
+		border-bottom: 2px solid #FFFAEE;
+	}
+
+	#mobile-menu a {
+		text-decoration: none;
+		color:#FFFAEE;
+	}
+
+	#header-intro {
+		display: none;
+	}
+
+	#content {
 		width:95%;
-		max-width: 350px;
+		/*height:1800px;*/
+		margin:0px 20px;
+		background-color: #FFFAEE;
+		position: absolute;
+		top:180px;
+		z-index: 0;
+	}
+}
+
+@media only all and (min-device-width: 1200px) {
+	#container {
+		width:1200px;
 		margin:0px auto;
+		background-color: #FFFAEE;
+	}
+
+	#header-container {
+		width:1200px;
+		height:420px;
 		position: relative;
+	}
+
+	#header-nav {
+		width:1200px;
+		height:60px;
+	}
+
+	#header-fade {
+		width:1200px;
+		height:60px;
+		background-color: rgba(51, 51, 51, 0.7);
+	}
+
+	#header-wrapper {
+		width:960px;
+		margin: 0px auto;
+	}
+
+	nav {
+		width:960px;
+		height:60px;
+	}
+
+	#logo {
+		display:inline-block;
+		position: relative;
+		width:350px;
 		height:60px;
 	}
 
@@ -59,7 +274,7 @@ body {
 		line-height: 60px;
 		font-size: 35px;
 		color: #FE8C24;
-		/*background-color: red;*/
+		
 	}
 
 	#logo h2 {
@@ -75,108 +290,76 @@ body {
 		color:#FFFAEE;
 	}
 
+	#mobile-menu {
+		display: none;
+	}
+
+	#mobile-menu-btn {
+		display:none;
+	}
+
 	#menu {
-		visibility: hidden;
-		width:100%;
+		display:inline-block;
+		width:600px;
 		height:60px;
-		/*background-color: red;*/
 		margin: 0px;
 		padding: 0px;
 		position: absolute;
 		top:0;
 	}
 
-	#mobile-menu-btn {
-		visibility: visible;
-		width:95%;
-		max-width: 400px;
-		margin: 50px auto;
-		border:2px solid #FFFAEE;
-		font-family: norwester;
-		color:#FFFAEE;
-		font-size: 42px;
-		text-align: center;
-	}
-
-	#mobile-menu {
-		visibility:hidden;
-		width:100%;
-		height:100%;
-		color:#FFFAEE;
-		background-color: rgba(51, 51, 51, 1);
-		position:absolute;
-		z-index: 100;
-		top:60px;
-	}
-
-	#mobile-menu ul {
-		padding:0px;
+	#menu ul {
+		display: inline-block;
+		height:60px;
 		margin:0px;
-		width:100%;
-		position: absolute;
-		top:60px;
+		padding-left:40px;
+		float:right;
 	}
 
-	#mobile-menu ul li {
-		width:95%;
-		height:40px;
-		/*max-width: 350px;*/
-		border:2px solid #FFFAEE;
-		margin:20px auto;
-		list-style: none;
+	#menu ul li {
+		display: inline-block;
+		margin:0px 10px 0px 10px;
+		padding:20px 0px 0px 0px;
 		font-family: norwester;
-		font-size: 32px;
-		text-align: center;
+		font-size: 20px;
+		text-align: right;
+		color:#FFFAEE;
 	}
 
-	#mobile-menu a {
+	#menu ul li:hover {
+		border-bottom: 1px solid #FE8C24;
+	}
+	#menu a {
 		text-decoration: none;
 		color:#FFFAEE;
 	}
-	#mobile-exit {
-		width:40px;
-		height:40px;
-		border:2px solid #FFFAEE;
-		border-radius:20px;
-		position: absolute;
-		top:10px;
-		right:10px;
-		text-align: center;
-		font-size: 32px;
-	}
 
 	#header-intro {
-		visibility: hidden;
-		width:100%;
-		height:220px;
+		width:960px;
+		height:350px;
 		margin:0px auto;
-		/*background-color: blue;*/
-		padding:0px;
 		position: relative;
 	}
 
-	#header-intro h3 {
-		font-family: norwester;
+	#header-intro h1 {
+		margin:0px;
 		font-size: 92px;
+		font-family: norwester;
 		color:#FFFAEE;
 		position: absolute;
-		bottom: 20px;
-		margin:0px;
-		text-align: center;
+		bottom:50px;
 	}
 
 	#content {
-		width:100%;
-		/*height:600px;*/
-		margin:0px auto;
-		margin-top:50px;
-		padding-bottom: 50px;
-		/*background-color: blue;*/
+		width:960px;
+		height:600px;
+		background-color: blue;
+		margin: 0px auto;
 	}
 
-}
+} 
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
 	#header-fade {
 	background-color: rgba(51, 51, 51, 0.6);
 	width:1200px;
@@ -209,11 +392,9 @@ body {
 
 	#content {
 		width:960px;
-		/*height:600px;*/
 		margin:0px auto;
 		margin-top:50px;
 		padding-bottom: 50px;
-		/*background-color: blue;*/
 	}
 
 	nav {
@@ -227,7 +408,6 @@ body {
 		position: relative;
 		width:350px;
 		height:60px;
-		/*background-color: blue;*/
 	}
 
 	#mobile-menu-btn {
@@ -242,7 +422,6 @@ body {
 		display:inline-block;
 		width:600px;
 		height:60px;
-		/*background-color: red;*/
 		margin: 0px;
 		padding: 0px;
 		position: absolute;
@@ -255,19 +434,15 @@ body {
 		margin:0px;
 		padding-left:40px;
 		float:right;
-		/*background-color: yellow;*/
 	}
 
 	#menu ul li {
 		display: inline-block;
-		/*width: 90px;*/
-		/*background-color: purple;*/
 		margin:0px 10px 0px 10px;
 		padding:20px 0px 0px 0px;
 		font-family: norwester;
 		font-size: 20px;
 		text-align: right;
-		/*line-height: 60px;*/
 		color:#FFFAEE;
 	}
 
@@ -289,7 +464,7 @@ body {
 		line-height: 60px;
 		font-size: 35px;
 		color: #FE8C24;
-		/*background-color: red;*/
+		
 	}
 
 	#logo h2 {
@@ -318,7 +493,7 @@ body {
 
 
 }
-
+*/
 
 
 

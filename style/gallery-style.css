@@ -1,4 +1,17 @@
-#gallery-container {
+@media only all and (max-device-width: 767px) {
+	#header-nav {
+		background-image: url(../images/rolls-faberic.jpg);
+	}	
+
+}
+
+@media only all and (min-device-width: 1200px) {
+	#header-container {
+		background-image: url(../images/rolls-faberic.jpg);
+	}
+}
+
+/*#gallery-container {
 	width:1200px;
 	margin:0px auto;
 	background-color: #FFFAEE;
@@ -18,4 +31,4 @@
 .galleria {
 	width:960px;
 	height:600px;
-}
+}*/

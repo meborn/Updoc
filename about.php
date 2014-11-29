@@ -1,24 +1,31 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>About | Upholstery Doctor</title>
-		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="style/about-style.css">
+		<link rel="stylesheet" href="style/style.css" type="text/css" media="all"/>
+		<link rel="stylesheet" href="style/about-style.css" type="text/css" media="all" />
+		<!--<link rel="stylesheet" href="style/about-style.css"> -->
+		<!-- <link rel="stylesheet" href="style/index.css" type="text/css" media="all"/> -->
 	</head>
 	<body>
-		<div id="about-container">
+		<?php $page = 'About' ?>
+		<div id="container">
 			<div id="header-container">
-				<?php include('includes/header.php'); ?>
+				<div id="header-nav">
+					<?php include('includes/header.php'); ?>
+				</div>
 				<div id="header-intro">
-					<h3>Who Are We?</h3>
+					<h1>Who Are We?</h1>
 				</div>
 			</div>
+
 			<div id="content">
 				<div id="about-content">
-					<img src="images/about-us-photo.jpg" alt="Upholstery Doctor" >
+					
 				</div>
 			</div>
 		</div>
+		<?php include('includes/mobile-menu.php'); ?>
 	</body>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="javascript/mobile-menu.js"></script>

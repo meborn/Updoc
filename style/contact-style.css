@@ -1,5 +1,16 @@
+@media only all and (max-device-width: 767px) {
+	#header-nav {
+		background-image: url(../images/contact/updoc-business-card-2.jpg);
+	}	
 
-#contact-container {
+}
+
+@media only all and (min-device-width: 1200px) {
+	#header-container {
+		background-image: url(../images/contact/updoc-business-card-2.jpg);
+	}
+}
+/*#contact-container {
 	width:1200px;
 	margin:0px auto;
 	background-color: #FFFAEE;
@@ -31,10 +42,8 @@
 }
 
 #contact-address {
-	/*display: inline-block;*/
 	width:365px;
 	height:450px;
-	/*background-color: blue;*/
 	float: left;
 	position: relative;
 }
@@ -61,15 +70,13 @@
 }
 
 #contact-form {
-	/*display: inline-block;*/
 	float: left;
 	width:455px;
 	height:450px;
-	/*background-color: green;*/
 	padding-left:25px;
 	margin-left:50px;
 }
-
+*/
 
 
 

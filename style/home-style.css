@@ -5,38 +5,44 @@
 }*/
 
 @media (max-width: 768px) {
-	#home-page-image-container {
-		width:100%;
-		height:514px;
-		position:relative;
+	#header-container {
+		/*width:100%;
+		height:60px;
+		position:relative;*/
 		background-image: url(../images/home/home-page-xs.jpg);
 		background-repeat: no-repeat;
-		background-position: center;
-		margin:0px auto;
-		padding:0px;
+		background-position: top center;
+		/*margin:0px auto;
+		padding:0px;*/
 	}
 
-	#home-page-content {
+	#home-content {
 		padding:0px;
 		width:95%;
 		margin:0px auto;
+		background-color: #FFFAEE;
 	}
 
-	#home-page-big-text {
-		width:70%;
-		margin:0px;
-		padding-top: 70px;
+	#home-med-text h3 {
+		font-family: dosis;
+		font-size: 32px;
+		margin:100px 0px 0px 0px;
+		padding:0px 0px 0px 10px;
+		position:relative;
+		bottom:20px;
+		text-align: center;
 	}
 
-	#home-page-big-text h1 {
-		width:100%;
-		padding:0px;
-		margin:0px;
-		font-family: norwester;
-		color:#FFFAEE;
-		font-size: 52px;
-		/*text-align: center;*/
+	.my-circles {
+		width:300px;
+		height:300px;
+		border:2px solid #FE8C24;
+		border-radius:150px;
+		margin:20px auto;
 	}
+
+
+
 }
 
 @media (min-width: 1200px) {
@@ -74,7 +80,7 @@
 	font-size: 110px;
 }
 
-#home-page-med-text h3 {
+#home-med-text h3 {
 	font-family: dosis;
 	font-size: 52px;
 	margin:0px;

@@ -1,4 +1,17 @@
-#quote-container {
+@media only all and (max-device-width: 767px) {
+	#header-nav {
+		background-image: url(../images/sewing-machine-foot.jpg);
+	}	
+
+}
+
+@media only all and (min-device-width: 1200px) {
+	#header-container {
+		background-image: url(../images/sewing-machine-foot.jpg);
+	}
+}
+
+/*#quote-container {
 	width:1200px;
 	margin:0px auto;
 	background-color: #FFFAEE;
@@ -13,4 +26,4 @@
 
 #menu ul li:nth-child(5) {
 	border-bottom: 1px solid #FE8C24;
-}
+}*/
