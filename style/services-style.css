@@ -98,6 +98,114 @@
 	#header-container {
 		background-image: url(../images/services/upholstery-tools.jpg);
 	}
+
+	#services-content {
+		width:960px;
+		margin-top:25px;
+		margin-bottom:50px;
+	}
+
+	#services-content div {
+		width:936px;
+		border:2px solid #333333;
+		padding:10px;
+		position: relative;
+		margin-top:25px;
+	}
+
+	#services-content div h1 {
+		width:340px;
+		display: inline-block; 
+		position: absolute;
+		top:0px;
+		left:370px;
+		color:#333333;
+		font-family: norwester;
+		font-size: 42px;
+	}
+
+	#services-content div ul {
+		width:300px;
+		display: inline-block;
+		position: absolute;
+		top:75px;
+		left:350px;
+	}
+
+	#services-content div ul li {
+		font-family: dosis;
+		font-size: 24px;
+		color:#FE8C24;
+	}
+
+	#services-content div ul li span {
+		color:#333333;
+	}
+
+	.service-state {
+		background-color: rgba(254, 140, 36, 0.7);
+		width:280px;
+		height:50px;
+		position:absolute;
+		top:25px;
+		left:10px;
+		font-family: norwester;
+		font-size:32px;
+		color:#FFFAEE;
+		padding-left: 20px;
+		line-height: 50px;
+	}
+
+	.services-quote-link {
+		display: block;
+		width:300px;
+		position:absolute;
+		right:10px;
+		bottom:10px;
+		font-family: norwester;
+		font-size: 26px;
+		color:#333333;
+		text-align: right;
+	}
+
+	
+
+	.auto-state-btn {
+		display: inline-block;
+		width:100px;
+		height:30px;
+		border:2px solid #FFFAEE;
+		font-size: 26px;
+		font-family: dosis; 
+		color:#FFFAEE;
+		text-align: center;
+		line-height: 30px;
+		background-color: rgba(51, 51, 51, 0.7);
+	}
+
+	#auto-state-before {
+		position: absolute;
+		bottom:25px;
+		left:50px;
+	}
+
+	#auto-state-after {
+		position: absolute;
+		bottom:25px;
+		left:175px;
+	}
+
+	#furniture-state-before {
+		position: absolute;
+		bottom:25px;
+		left:50px;
+	}
+
+	#furniture-state-after {
+		position: absolute;
+		bottom:25px;
+		left:175px;
+	}
 }
 
 

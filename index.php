@@ -13,11 +13,45 @@
 				<div id="header-nav">
 					<?php include('includes/header.php'); ?>
 				</div>
+				<div id="home-intro">
+					<div id="home-intro-big">
+						<h1>THE DOCTOR WILL</h1>
+						<h1>SEE YOU NOW</h1>
+					</div>
+					<div id="home-intro-circles">
+						<h2>Upholstery & Repair</h2>
+						<div id="res-circle" class="my-circles">
+							<span>Residential</span>
+						</div>
+						<div id="bus-circle" class="my-circles">
+							<span>Commercial</span>
+						</div>
+						<div id="auto-circle" class="my-circles">
+							<span>Automotive</span>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="content">
 				<div id="home-content">
-					
+					<div id="testimonial">
+						<h3>What Do Our Patients Say?</h3>
+						<p id="customer-quote">Very happy with the finished product and friendliness of the staff! Thanks so much!</p>
+						<ul><li></li><li></li><li></li></ul>
+						<div id="quality" class="test">
+							<p>Quality</p>
+							<img src="images/home/stars.png" alt="five stars for quality" >
+						</div>
+						<div id="service" class="test">
+							<p>Service</p>
+							<img src="images/home/stars.png" alt="five stars for quality" >
+						</div>
+						<div id="time" class="test">
+							<p>Timeliness</p>
+							<img src="images/home/stars.png" alt="five stars for quality" >
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -25,4 +59,5 @@
 	</body>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="javascript/mobile-menu.js"></script>
+	<script src="javascript/home.js"></script>
 </html>

@@ -41,7 +41,7 @@
 						<span class="service-state" id="auto-state">
 							Before
 						</span>
-						<a href="#">Get A Quote ></a>
+						<a href="#" class="services-quote-link">Get A Quote ></a>
 					</div>
 					<div id="furniture">
 						<img src="images/services/chair-before.jpg" alt="before picture of automobile" >
@@ -64,7 +64,7 @@
 						<span class="service-state" id="furniture-state">
 							Before
 						</span>
-						<a href="#">Get A Quote ></a>
+						<a href="#" class="services-quote-link">Get A Quote ></a>
 					</div>
 				</div>
 			</div>
