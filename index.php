@@ -35,11 +35,30 @@
 
 			<div id="content">
 				<div id="home-content">
+					
+					<div id="scissors">
+						<h4>(435) 705-0675</h4>
+						<p><span>Upholstery Doctor</span> has been providing quailty upholstery services for St. George, Utah and the surrounding areas since 2005. However, we have more than <span>20 years experience</span> in the industry. We garuntee honesty and quailty. Contact us today with all of your upholstery needs.</p> 
+						<div id="scissors-contact-btn">
+							<!-- <a href="services.php">Our Work ></a> -->
+							<a href="contact.php">Contact Us ></a>
+						</div>
+					</div>
 					<div id="testimonial">
 						<h3>What Do Our Patients Say?</h3>
-						<p id="customer-quote">Very happy with the finished product and friendliness of the staff! Thanks so much!</p>
-						<ul><li></li><li></li><li></li></ul>
-						<div id="quality" class="test">
+						<div class="quote">
+							<p>Very happy with the finished product and friendliness of the staff! Thanks so much!</p>
+							<!-- <img src="images/home/stars.png" alt="five stars for quality" > -->
+						</div>
+						<div class="quote" id="border-quote">
+							<p>Having been in the car business for 30 years it's refreshing to have good quality upholstery repair facility in St. George. Brandon and his staff have done an outstanding job with replaceing and repairing my vehicles in a timely matter and a fair price. Their work is top quality.</p>
+						</div>
+						<div class="quote">
+							<p>Reliable, excellent quality and quick turnaround. What more can you ask for?</p>
+						</div>
+						<!-- <p id="customer-quote">Very happy with the finished product and friendliness of the staff! Thanks so much!</p>
+						<ul><li></li><li></li><li></li></ul> -->
+						<!-- <div id="quality" class="test">
 							<p>Quality</p>
 							<img src="images/home/stars.png" alt="five stars for quality" >
 						</div>
@@ -50,14 +69,7 @@
 						<div id="time" class="test">
 							<p>Timeliness</p>
 							<img src="images/home/stars.png" alt="five stars for quality" >
-						</div>
-					</div>
-					<div id="scissors">
-						<h4>(435) 705-0675</h4>
-						<p><span>Upholstery Doctor</span> has been providing quailty upholstery services for St. George, Utah and the surrounding areas since 2005. Contact us today for all of your upholstery needs. We garuntee quility and honesty.</p> 
-						<div id="scissors-contact-btn">
-							<a href="contact.php">Contact Us ></a></p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

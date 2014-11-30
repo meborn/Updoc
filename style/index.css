@@ -26,7 +26,9 @@
 	}
 
 	#home-intro-circles {
-
+		width:75%;
+		/*background-color: green;*/
+		margin:0px auto;
 	}
 
 	#home-intro-circles h2 {
@@ -34,6 +36,7 @@
 		font-size: 72px;
 		color:#333333;
 		font-family: dosis;
+		text-align: center;
 	}
 
 	.my-circles {
@@ -43,7 +46,7 @@
 		border:3px solid #FE8C24;
 		border-radius:100px;
 		margin-right: 20px;
-		margin-top: 25px;
+		margin-top: 50px;
 		position: relative;
 	}
 
@@ -78,12 +81,12 @@
 	}
 
 	#home-content {
-		margin-top: 400px;
+		margin-top: 450px;
 	}
 	
 	#testimonial {
 		width:95%;
-		margin:0px auto;
+		margin:25px auto;
 		border:2px solid #333333;
 	}
 
@@ -93,6 +96,17 @@
 		color:#333333;
 		margin:0px;
 		text-align: center;
+		border-bottom: 2px solid #FE8C24;
+	}
+
+	.quote {
+		width:90%;
+		font-family: volkron;
+		color:#333333;
+		font-size: 48px;
+		margin:0px auto;
+		/*border-top: 2px solid #333333;*/
+		border-bottom: 2px solid #333333;
 	}
 
 	#testimonial ul {
@@ -154,11 +168,13 @@
 
 	#scissors {
 		width:95%;
-		margin:0px auto;
+		/*height:700px;*/
+		margin:100px auto;
 		background-image: url(../images/home/scissors-med.png);
-		background-position:0px 60px;
+		background-position:bottom left;
 		background-repeat: no-repeat;
 		position: relative;
+		border:2px solid #333333;
 	}
 
 	#scissors h4 {
@@ -169,21 +185,28 @@
 		margin:30px 0px 0px 0px;
 		padding-bottom:100px;
 		display: inline-block;
+		position: absolute;
+		bottom:50px;
+		left:20px;
 	}
 
 	#scissors p {
-		width:100%;
-		font-size: 38px;
+		width:95%;
+		font-size: 52px;
+		padding-bottom:240px;
+		margin:0px auto;
+		/*position: absolute;
+		top:0px;*/
 	}
 
 	#scissors-contact-btn {
-		width:40%;
+		width:30%;
 		height:60px;
 		border:2px solid #333333;
 		text-align: center;
 		position: absolute;
-		top:100px;
-		right:0px;
+		bottom:70px;
+		right:20px;
 		line-height: 60px;
 	}
 
@@ -200,6 +223,12 @@
 		color: #FE8C24;
 	}
 
+}
+
+@media only all and (min-device-width: 768px) and (max-device-width: 991px) {
+	#header-nav {
+		background-image: url(../images/home/home-page-xs.jpg);
+	}
 }
 
 @media only all and (min-width: 1200px) {
@@ -290,15 +319,17 @@
 
 	#home-content {
 		margin-top: 25px;
-		height:450px;
+		height:605px;
 	}
 
 	#testimonial {
 		/*display: inline-block;*/
 		width:400px;
-		height:400px;
+		height:545px;
 		border:2px solid #333333;
 		float: left;
+		margin-left:50px;
+		/*position: relative;*/
 	}
 
 	#testimonial h3 {
@@ -308,6 +339,23 @@
 		margin:0px;
 		text-align: center;
 		padding-top: 15px;
+		border-bottom: 2px solid #FE8C24;
+	}
+
+	.quote {
+		width:360px;
+		padding:0px 10px;
+		font-family: volkron;
+		color:#333333;
+		font-size: 22px;
+		margin:0px 10px;
+		/*border-top: 2px solid #333333;*/
+		/*border-bottom: 2px solid #333333;*/
+	}
+
+	#border-quote {
+		border-top: 2px solid #333333;
+		border-bottom: 2px solid #333333;
 	}
 
 	#customer-quote {
@@ -316,7 +364,7 @@
 		font-family: volkron;
 		color:#333333;
 		font-size: 22px;
-		height:50px;
+		height:200px;
 		text-align: center;
 	}
 	/*#testimonial {
@@ -337,7 +385,7 @@
 		padding:0px;
 	}
 
-	#testimonial ul li:nth-child(2) {
+	#testimonial ul li:nth-child(1) {
 		color: #FE8C24;
 	}
 
@@ -369,8 +417,8 @@
 
 	#scissors {
 		width:500px;
-		height:400px;
-		margin-left: 50px;
+		height:545px;
+		/*margin-left: 50px;*/
 		/*display: inline-block;*/
 		/*background-color: blue;*/
 		float: left;
@@ -392,7 +440,7 @@
 	}
 
 	#scissors p {
-		font-size: 20px;
+		font-size: 24px;
 		font-family: volkron;
 		color:#333333;
 		margin:0px;

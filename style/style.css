@@ -226,7 +226,163 @@ body {
 }
 
 @media only all and (min-device-width: 768px) and (max-device-width: 991px) {
-	
+	#container {
+		width:100%;
+		height:100%;
+	}
+
+	#header-container {
+		width:100%;
+		height:60px;
+		box-shadow: 0px 5px 10px #444;
+		/*background-color: red;*/
+	}
+
+	#header-nav {
+		width:100%;
+		height:60px;
+	}
+
+	#header-fade {
+		width:100%;
+		height:60px;
+		background-color: rgba(51, 51, 51, 0.7);
+	}
+
+	#header-wrapper {
+		width:100%;
+		height:60px;
+		margin: 0px auto;
+	}
+
+	nav {
+		width:100%;
+		height:60px;
+	}
+
+	#logo {
+		display:inline-block;
+		position: relative;
+		width:350px;
+		height:60px;
+	}
+
+	#logo h1 {
+		display: inline-block;
+		font-family: norwester;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		line-height: 60px;
+		font-size: 35px;
+		color: #FE8C24;
+		
+	}
+
+	#logo h2 {
+		display: inline-block;
+		font-family: dosis;
+		font-size: 32px;
+		margin:0px;
+		padding:0px;
+		position: absolute;
+		top:0px;
+		left:245px;
+		line-height: 60px;
+		color:#FFFAEE;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#mobile-menu-btn {
+		display: inline-block;
+		position: absolute;
+		top:0px;
+		right:20px;
+		width:200px;
+		height:60px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#mobile-menu-btn span {
+		position: absolute;
+		top:5px;
+		right:80px;
+		line-height: 60px;
+		font-family: dosis;
+		font-size: 38px;
+		color:#FFFAEE;
+	}
+
+	#mobile-menu-icon {
+		width:60px;
+		height: 40px;
+		border:2px solid #FFFAEE;
+		position: absolute;
+		right:10px;
+		top:5px;
+		padding-top:5px;
+	}
+
+	#mobile-menu-icon.orange {
+		background-color: #FE8C24;
+	}
+
+	.mobile-menu-bar {
+		width:50px;
+		height:3px;
+		margin:5px auto;
+		background-color: #FFFAEE;
+	}
+
+	#mobile-menu {
+		display: none;
+		/*visibility: hidden;*/
+		width:100%;
+		height:800px;
+		position: absolute;
+		top:60px;
+		background-color: #333333;
+		z-index: 40;
+	}
+
+	#mobile-menu ul {
+		width:100%;
+		margin:0px;
+		padding:0px;
+	}
+
+	#mobile-menu ul li {
+		width:100%;
+		margin:10px 0px;
+		font-size: 52px;
+		font-family: norwester;
+		text-align: center;
+		border-bottom: 2px solid #FFFAEE;
+	}
+
+	#mobile-menu a {
+		text-decoration: none;
+		color:#FFFAEE;
+	}
+
+	#header-intro {
+		display: none;
+	}
+
+	#content {
+		width:95%;
+		/*height:1800px;*/
+		margin:0px 20px;
+		background-color: #FFFAEE;
+		position: absolute;
+		top:60px;
+		z-index: 0;
+	}
 }
 
 @media only all and (min-width: 1200px) {

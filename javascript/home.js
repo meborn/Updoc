@@ -1,8 +1,10 @@
 $(document).ready(function() {
-	var i = 2;
-	var testmonial = ["Well pleased!", "Very happy with the finished product and friendliness of the staff! Thanks so much!", "Reliable, excellent quality and quick turnaround. What more can you ask for?"];
+	var i = 0;
+	var testmonial = [ "Very happy with the finished product and friendliness of the staff! Thanks so much!",
+					"Reliable, excellent quality and quick turnaround. What more can you ask for?",
+					"Having been in the car business for 30 years it's refreshing to have good quality upholstery repair facility in St. George. Brandon and his staff have done an outstanding job with replaceing and repairing my vehicles in a timely matter and a fair price. Their work is top quality."];
 	setInterval(function() {
-		$('#customer-quote').fadeOut("fast", function() {
+		$('#customer-quote').fadeOut("slow", function() {
 			if (i < 2) {
 				$('#customer-quote').text(testmonial[i]);
 				if(i === 0) {
