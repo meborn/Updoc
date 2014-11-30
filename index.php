@@ -9,7 +9,7 @@
 		<?php $page = 'Home' ?>
 		<div id="container">
 			<!-- <img src="images/home/home-page-photo.jpg"> -->
-			<div id="header-container">
+			<div id="home-header-container">
 				<div id="header-nav">
 					<?php include('includes/header.php'); ?>
 				</div>
@@ -50,6 +50,13 @@
 						<div id="time" class="test">
 							<p>Timeliness</p>
 							<img src="images/home/stars.png" alt="five stars for quality" >
+						</div>
+					</div>
+					<div id="scissors">
+						<h4>(435) 705-0675</h4>
+						<p><span>Upholstery Doctor</span> has been providing quailty upholstery services for St. George, Utah and the surrounding areas since 2005. Contact us today for all of your upholstery needs. We garuntee quility and honesty.</p> 
+						<div id="scissors-contact-btn">
+							<a href="contact.php">Contact Us ></a></p>
 						</div>
 					</div>
 				</div>
