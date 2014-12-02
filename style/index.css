@@ -320,7 +320,12 @@
 }
 
 @media only all and (min-device-width: 1200px) {
-
+	#container {
+		width:1200px;
+		margin:0px auto;
+		background-color: #FFFAEE;
+	}
+	
 	#menu ul li:nth-child(1) {
 		border-bottom: 1px solid #FE8C24; 
 	}
