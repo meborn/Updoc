@@ -1,16 +1,16 @@
 @font-face {
 	font-family: norwester;
-	src: url(fonts/norwester/norwester.otf);
+	src: url(../fonts/norwester/norwester.otf);
 }
 
 @font-face {
 	font-family: dosis;
-	src: url(fonts/dosis/Dosis-ExtraBold.otf);
+	src: url(../fonts/dosis/Dosis-ExtraLight.otf);
 }
 
 @font-face {
 	font-family: volkron;
-	src: url(fonts/Volkron/Volkron-Regular.ttf);
+	src: url(../fonts/Volkron/Volkron-Regular.ttf);
 }
 
 body {
