@@ -1,5 +1,5 @@
 @media only all and (max-device-width: 767px) {
-	#header-nav {
+	#header-container {
 		background-image: url(../images/rolls-faberic.jpg);
 	}	
 
@@ -8,6 +8,11 @@
 @media only all and (min-device-width: 1200px) {
 	#header-container {
 		background-image: url(../images/rolls-faberic.jpg);
+	}
+
+	.galleria {
+		width:960px;
+		height:600px;
 	}
 }
 

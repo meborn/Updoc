@@ -30,7 +30,7 @@
 						<p>
 							<span>Upholstery Doctor</span> has been providing quality upholstery services to St. George, Utah and surrending areas since 2005. However, the doctor and his staff have more than <span>20 years of experience</span> in the industrey. We can assist you with any of your upholstery needs. Not only do we believe in <span>quality</span> work but we have the <span>customer service</span> to match. We have built our business on <span>honesty</span>. We strive to treat each customer they way we would like to be treated. 
 						</p>
-						<a href="services.php">Learn More About Our Skills ></a>
+						<a href="services.php">Our Skills ></a>
 					</div>
 				</div>
 			</div>

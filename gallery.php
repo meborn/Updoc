@@ -19,7 +19,9 @@
 
 			<div id="content">
 				<div id="gallery-content">
-					
+					<div id="gallery">
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -42,8 +44,8 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="javascript/mobile-menu.js"></script>
 	<script src="javascript/galleria/galleria-1.4.2.min.js"></script>
-	// <script>
-	// 	Galleria.loadTheme('javascript/galleria/themes/classic/galleria.classic.min.js');
-	// 	Galleria.run('.galleria');
-	// </script>
+	<script>
+		Galleria.loadTheme('javascript/galleria/themes/classic/galleria.classic.js');
+	 	Galleria.run('.galleria');
+	</script>
 </html>

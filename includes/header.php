@@ -1,6 +1,5 @@
 
 <div id="header-fade">
-	<div id="header-wrapper">
 		<nav>
 			<div id="logo">
 				<img src="images/home/updoc-logo-icon.png" >
@@ -33,8 +32,6 @@
 			</div>
 			
 		</nav>
-		
-	</div>
 	
 </div>
 
