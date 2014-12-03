@@ -3,15 +3,19 @@ $(document).ready(function() {
 	var path;
 	var i;
 	var max;
-	
-	$('#gallery-repair').click(function() {
+	// gallery logic
+	var display_gallery = function(image_path, gallery_max) {
+		//toggle gallery to display
 		$('#overlay').toggle();
+		//fix for scrolling issue
 		$('body').toggleClass("body-no-scroll");
+		//empty img container and seet intitial variables
 		$('#gallery-img-container').empty();
-		path = 'images/gallery/repair/repair-';
-		max = 5;
+		path = image_path;
+		max = gallery_max;
 		i = 1;
 		$('#gallery-img-container').append('<img src=' + path + i + '.jpg >');
+		//empty thumbnail container and add thumbnails
 		$('#gallery-thumb-container').empty();
 		for(var n=1; n <=max; n++) {
 			$('#gallery-thumb-container').append($('<img>', {
@@ -20,7 +24,7 @@ $(document).ready(function() {
 				})
 			);
 		}
-
+		//add click function to thumbnails
 		$('#gallery-thumb-container img').click(function() {
 			var id = $(this).attr('id');
 			for(var k = 1; k <=max; k++) {
@@ -28,76 +32,33 @@ $(document).ready(function() {
 				if(id === check_id) {
 					console.log('image' + k + 'was clicked');
 					$('#gallery-img-container img').attr('src', path + k + '.jpg');
-					// $('#gallery-img-container').empty();
-					// $('#gallery-img-container').append('<img src=' + path + k + '.jpg >');
 					i = k;
 				}
 			}
 		});
+	}
+	// start gallery buttons click functions
+	$('#gallery-repair').click(function() {
+		var image_path = 'images/gallery/repair/repair-';
+		var gallery_max = 5;
+		display_gallery (image_path, gallery_max);
 		
 	});
 
 	$('#gallery-chevy').click(function() {
-		$('#overlay').toggle();
-		$('#gallery-img-container').empty();
-		path = 'images/gallery/chevy/chevy-';
-		max = 1;
-		i = 1;
-		$('#gallery-img-container').append('<img src=' + path + i + '.jpg>');
-		$('#gallery-thumb-container').empty();
-		for(var n=1; n <=max; n++) {
-			$('#gallery-thumb-container').append($('<img>', {
-					src: path+n+'.jpg',
-					id: 'thumb-'+n
-				})
-			);
-		}
-
-		$('#gallery-thumb-container img').click(function() {
-			var id = $(this).attr('id');
-			for(var k = 1; k <=max; k++) {
-				var check_id = 'thumb-'+k;
-				if(id === check_id) {
-					console.log('image' + k + 'was clicked');
-					$('#gallery-img-container img').attr('src', path + k + '.jpg');
-					// $('#gallery-img-container').empty();
-					// $('#gallery-img-container').append('<img src=' + path + k + '.jpg >');
-					i = k;
-				}
-			}
-		});
+		var image_path = 'images/gallery/chevy/chevy-';
+		var gallery_max = 1;
+		display_gallery (image_path, gallery_max);
 	});
+
 	$('#gallery-recover').click(function() {
-		$('#overlay').toggle();
-		$('#gallery-img-container').empty();
-		path = 'images/gallery/recover/recover-';
-		max = 2;
-		i = 1;
-		$('#gallery-img-container').append('<img src=' + path + i + '.jpg>');
-		$('#gallery-thumb-container').empty();
-		for(var n=1; n <=max; n++) {
-			$('#gallery-thumb-container').append($('<img>', {
-					src: path+n+'.jpg',
-					id: 'thumb-'+n
-				})
-			);
-		}
-
-		$('#gallery-thumb-container img').click(function() {
-			var id = $(this).attr('id');
-			for(var k = 1; k <=max; k++) {
-				var check_id = 'thumb-'+k;
-				if(id === check_id) {
-					console.log('image' + k + 'was clicked');
-					$('#gallery-img-container img').attr('src', path + k + '.jpg');
-					// $('#gallery-img-container').empty();
-					// $('#gallery-img-container').append('<img src=' + path + k + '.jpg >');
-					i = k;
-				}
-			}
-		});
+		var image_path = 'images/gallery/recover/recover-';
+		var gallery_max = 2;
+		display_gallery (image_path, gallery_max);
 	});
+	// end gallery buttons click functions
 
+	// start gallery navigation buttons
 	$('#gallery-prev').click(function() {
 		console.log('prev button clicked');
 		if(i == 1) {
@@ -110,6 +71,7 @@ $(document).ready(function() {
 		}
 
 	});
+
 	$('#gallery-next').click(function() {
 		if(i == max) {
 			i = 1;
@@ -120,8 +82,10 @@ $(document).ready(function() {
 			$('#gallery-img-container img').attr('src', path + i + '.jpg');
 		}
 	});
+
 	$('#gallery-exit').click(function() {
 		$('#overlay').toggle();
 		$('body').toggleClass("body-no-scroll");
 	});
+	// end gallery navigation buttons
 });

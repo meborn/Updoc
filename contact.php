@@ -1,11 +1,66 @@
 <?php
-$sent_email = false;
-if($_POST["message"]) {
-	$sent_email = true;
-    $mail_sent = mail("mneborn@gmail.com", $_POST["name"], $_POST["phone"] . $_POST["message"], $_POST["email"]);
+$nameErr = $emailErr = $phoneErr = $messageErr = "";
+$name = $email = $phone = $message = "";
+$final_message = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$message_sent = false;
+	if(empty($_POST["name"])) {
+		$nameErr = "* We need your name!";
+	} else {
+		$name = test_input($_POST["name"]);
+		if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+		  $nameErr = "* Only letters and white space allowed"; 
+		}
+	}
+
+	if(empty($_POST["email"]) && empty($_POST["phone"])) {
+		$emailErr = "* We need your email or phone number to contact you!";
+	} else {
+		if(empty($_POST["email"])) {
+			$emailErr = "";
+		} else {
+			$email = test_input($_POST["email"]);
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			  $emailErr = "* Invalid email format"; 
+		}
+	}
+
+		if(empty($_POST["phone"])) {
+			$phoneErr = "";
+		} else {
+			$phone = test_input($_POST["phone"]);
+			$regex = "/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i";
+			if(!preg_match($regex, $phone)) {
+				$phoneErr = "* Invalid Phone Number";
+			}
+		}
+	}
+
+	if(empty($_POST["message"])) {
+		$messageErr = "";
+	} else {
+		$message = test_input($_POST["message"]);
+	}
+
+	if($nameErr == "" && $emailErr == "" && $phoneErr == "") {
+		$final_message = "$name \r $phone \r $email \r $message" ;
+		$message_sent = mail('mneborn@gmail.com', 'UPHOLSTERY DOCTOR CONTACT', $final_message);
+	} else {
+		$message_sent = false;
+	}
+
 }
+
+function test_input($data) {
+	$data = trim($data);
+	$data = stripcslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
 ?>
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Contact | Upholstery Doctor</title>
@@ -28,11 +83,18 @@ if($_POST["message"]) {
 			<div id="content">
 				<div id="email-message">
 					<h1>
-					<?php
-						if($sent_email) {
-							echo $mail_sent ? "Your message has been sent. Thank you for contacting us." : "Mail failed";
-						}
-					?>
+						<?php
+							if ($_SERVER["REQUEST_METHOD"] == "POST") {
+								if($message_sent) {
+									echo "Your message has been sent.";
+									$name = $email = $phone = $message = "";
+								}
+								else {
+									echo "Your message failed. Please check for errors";
+								}
+							}
+							
+						?>
 					</h1>
 				</div>
 				<div id="contact-content">
@@ -50,16 +112,24 @@ if($_POST["message"]) {
 							</div>
 						</div>
 					</div>
-					<form id="contact-form" method="post" action="contact.php">
+					<form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 						<h1>Ask Us A Question</h1>
-						Name<br>
-						<input id="contact-name" class="contact-input" type="text" name="name"><br>
-						Phone<br>
-						<input id="contact-phone" class="contact-input" type="text" name="phone"><br>
-						Email<br>
-						<input id="contact-email" class="contact-input" type="text" name="email"><br>
-						Message<br>
-						<textarea rows="6" cols="50" id="contact-message" class="contact-input" name="message"></textarea>
+						<span class="label">Name</span>
+						<span class="error"><?php echo $nameErr;?></span><br>
+						<input id="contact-name" class="contact-input" type="text" name="name" value="<?php echo $name;?>"><br>
+
+						<span class="label">Phone</span>
+						<span class="error"><?php echo $phoneErr;?></span><br>
+						<input id="contact-phone" class="contact-input" type="text" name="phone" value="<?php echo $phone;?>"><br>
+						
+						<span class="label">Email</span>
+						<span class="error"><?php echo $emailErr;?></span><br>
+						<input id="contact-email" class="contact-input" type="text" name="email" value="<?php echo $email;?>"><br>
+						
+						<span class="label">Message</span>
+						<br>
+						<textarea rows="6" cols="50" id="contact-message" class="contact-input" name="message" value="<?php echo $message;?>"></textarea>
+
 						<br>
 						<input id="contact-submit" type="submit" value="Send">
 					</form>
@@ -67,45 +137,6 @@ if($_POST["message"]) {
 			</div>
 		</div>
 		<?php include('includes/mobile-menu.php'); ?>
-		<!-- <div id="contact-container">
-				<div id="header-container">
-					<div id="header-intro">
-						<h3>Say Hello.</h3>
-					</div>
-				</div>
-				<div id="content">
-					<div id="contact-content">
-						<div id="contact-address">
-							<h1>Address & Directions:</h1>
-							<h2>Upholstery Doctor</h2>
-							<em>1478 South 270 East</em>
-							<br>
-							<em>St. George, Utah 84790</em>
-							<h2>(435) 705-0675</h2>
-							<div id="map_canvas">
-
-							</div>
-						</div>
-						<div id="contact-form">
-							<h1>Contact Us:</h1>
-							<form method="post" action="contact.php">
-								<label>Name</label>
-								<input type="text" size="25" >
-								<label>Email Address</label>
-								<input type="text" size="25" >
-								<label>Contact Number</label>
-								<input type="text" size="25" >
-								<label>Message</label>
-								<textarea name="message"></textarea>
-							</form>
-						</div>
-					</div>
-				</div>
-		</div> -->
-		<!-- <form method="post" action="contact.php">
-			<textarea name="message"></textarea>
-			<input type="submit">
-		</form> -->
 	</body>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="javascript/contact.js"></script>
