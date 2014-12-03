@@ -1,6 +1,8 @@
 <?php
+$sent_email = false;
 if($_POST["message"]) {
-    mail("mneborn@gmail.com", "Form to email message", $_POST["message"], "From: meborn@dmail.dixie.edu");
+	$sent_email = true;
+    $mail_sent = mail("mneborn@gmail.com", $_POST["name"], $_POST["phone"] . $_POST["message"], $_POST["email"]);
 }
 ?>
 <!DOCTYPE>
@@ -24,8 +26,43 @@ if($_POST["message"]) {
 			</div>
 
 			<div id="content">
+				<div id="email-message">
+					<h1>
+					<?php
+						if($sent_email) {
+							echo $mail_sent ? "Your message has been sent. Thank you for contacting us." : "Mail failed";
+						}
+					?>
+					</h1>
+				</div>
 				<div id="contact-content">
-					
+					 
+					<div id="contact-info">
+						<div id="contact-address">
+							<h1>Address & Directions</h1>
+							<h2>Upholstery Doctor</h2>
+							<em>1478 South 270 East</em>
+							<br>
+							<em>St. George, Utah 84790</em>
+							<h3>(435) 705-0675</h3>
+							<div id="map_canvas">
+
+							</div>
+						</div>
+					</div>
+					<form id="contact-form" method="post" action="contact.php">
+						<h1>Ask Us A Question</h1>
+						Name<br>
+						<input id="contact-name" class="contact-input" type="text" name="name"><br>
+						Phone<br>
+						<input id="contact-phone" class="contact-input" type="text" name="phone"><br>
+						Email<br>
+						<input id="contact-email" class="contact-input" type="text" name="email"><br>
+						Message<br>
+						<textarea rows="6" cols="50" id="contact-message" class="contact-input" name="message"></textarea>
+						<br>
+						<input id="contact-submit" type="submit" value="Send">
+					</form>
 				</div>
 			</div>
 		</div>

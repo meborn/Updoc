@@ -20,21 +20,27 @@
 			<div id="content">
 				<div id="gallery-content">
 					<div class="gallery-btn" id="gallery-repair">
+						<img src="images/gallery/repair/repair-xs.jpg" >
 						<h2>Repairs</h2>
 					</div>
 					<div class="gallery-btn" id="gallery-chevy">
+						<img src="images/gallery/chevy/chevy-xs.jpg" >
 						<h2>36 Chevy</h2>
 					</div>
 					<div class="gallery-btn" id="gallery-recover">
+						<img src="images/gallery/recover/recover-xs.jpg" >
 						<h2>Recover</h2>
 					</div>
 					<div class="gallery-btn" id="gallery-boat">
+						<img src="images/gallery/boat/boat-xs.jpg" >
 						<h2>Boats</h2>
 					</div>
 					<div class="gallery-btn" id="gallery-furniture">
+						<img src="images/gallery/furniture/furniture-xs.jpg" >
 						<h2>Furniture</h2>
 					</div>
 					<div class="gallery-btn" id="gallery-custom">
+						<img src="images/gallery/custom/custom-xs.jpg" >
 						<h2>Custom</h2>
 					</div>
 					<!-- <div id="gallery">
@@ -59,7 +65,7 @@
 				<div id="gallery">
 						<div id="gallery-left">
 							<div id="gallery-img-container">
-							<!-- <img src="images/gallery/repair/repair-3.jpg"> -->
+							<!-- <img src="images/gallery/repair/repair-1.jpg"> -->
 							</div>
 							<div id="gallery-nav">
 								<div class="gallery-nav-btn" id="gallery-prev">
