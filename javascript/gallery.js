@@ -40,22 +40,37 @@ $(document).ready(function() {
 	// start gallery buttons click functions
 	$('#gallery-repair').click(function() {
 		var image_path = 'images/gallery/repair/repair-';
-		var gallery_max = 5;
+		var gallery_max = 13;
 		display_gallery (image_path, gallery_max);
 		
 	});
 
 	$('#gallery-chevy').click(function() {
 		var image_path = 'images/gallery/chevy/chevy-';
-		var gallery_max = 1;
+		var gallery_max = 5;
 		display_gallery (image_path, gallery_max);
 	});
 
 	$('#gallery-recover').click(function() {
 		var image_path = 'images/gallery/recover/recover-';
-		var gallery_max = 2;
+		var gallery_max = 9;
 		display_gallery (image_path, gallery_max);
 	});
+	$('#gallery-boat').click(function() {
+		var image_path = 'images/gallery/boat/boat-';
+		var gallery_max = 14;
+		display_gallery (image_path, gallery_max);
+	});
+	$('#gallery-furniture').click(function() {
+		var image_path = 'images/gallery/furniture/furniture-';
+		var gallery_max = 12;
+		display_gallery (image_path, gallery_max);
+	});
+	$('#gallery-custom').click(function() {
+		var image_path = 'images/gallery/custom/custom-';
+		var gallery_max = 9;
+		display_gallery (image_path, gallery_max);
+	})
 	// end gallery buttons click functions
 
 	// start gallery navigation buttons

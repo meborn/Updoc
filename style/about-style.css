@@ -1,4 +1,6 @@
-
+#menu ul li:nth-child(2) {
+	border-bottom: 1px solid #FE8C24; 
+}
 
 
 @media only all and (max-device-width: 767px) {
@@ -118,9 +120,9 @@
 	#about-content {
 		margin-top:25px;
 		margin-bottom:50px;
-		width:95%;
+		width:94%;
 		border:2px solid #333333;
-		padding:10px;
+		padding:3%;
 	}
 
 	#about-img {

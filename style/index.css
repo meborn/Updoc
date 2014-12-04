@@ -1,3 +1,7 @@
+#menu ul li:nth-child(1) {
+		border-bottom: 1px solid #FE8C24; 
+}
+
 @media only all and (max-device-width: 767px) {
 	#header-nav {
 		background-image: url(../images/home/home-page-xs.jpg);
@@ -326,9 +330,7 @@
 		background-color: #FFFAEE;
 	}
 	
-	#menu ul li:nth-child(1) {
-		border-bottom: 1px solid #FE8C24; 
-	}
+	
 	#home-header-container {
 		width:1200px;
 		/*height:420px;*/

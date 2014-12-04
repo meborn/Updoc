@@ -1,6 +1,9 @@
 #header-container {
 		background-image: url(../images/contact/updoc-business-card-2.jpg);
-	}	
+	}
+#menu ul li:nth-child(6) {
+	border-bottom: 1px solid #FE8C24; 
+}	
 
 @media only all and (max-device-width: 767px) {
 	#contact-content {
@@ -52,39 +55,304 @@
 
 	#contact-form {
 		width:100%;
-		font-family: norwester;
+		/*font-family: norwester;
 		color:#333333;
-		font-size: 52px;
+		font-size: 52px;*/
 	}
 
 	.contact-input {
-		width:100%;
+		width:99%;
 		height:120px;
-		border:1px solid #333333;
+		border:2px solid #333333;
 		font-size: 62px;
 		color:#333333;
 		font-family: dosis;
 		margin:8px 0px;
 	}
 
-	#contact-submit {
+	.contact-input:focus {
+		outline: none !important;
+    	border:2px solid #FE8C24;
+	}
+
+	#contact-message {
 		width:100%;
+		height:300px;
+		padding:0px;
+	}
+
+	#contact-submit {
+		width:99%;
 		height:100px;
 		background-color: #FFFAEE;
-		border:1px solid #FE8C24;
+		border:2px solid #FE8C24;
 		font-family: dosis;
 		font-size: 46px;
 		margin:45px 0px;
 		margin-top:55px;
 	}
 
+	#contact-submit:focus {
+		outline: none !important;
+    	border:2px solid #FE8C24;
+	}
+
+	#email-message h1 {
+		font-size: 52px;
+		font-family: norwester;
+		color:#FE8C24;
+	}
+
+	.error {
+		color:#FE8C24;
+		font-size: 52px;
+		font-family: dosis;
+	}
+
+	.label {
+		font-family: norwester;
+		color:#333333;
+		font-size: 62px;
+	}
+
 
 }
 
+@media only all and (min-device-width: 768px) and (max-device-width: 969px) {
+	#contact-content {
+		width:94%;
+		border:2px solid #333333;
+		padding:3%;
+	}
+
+	#contact-address h1 {
+		margin:0px;
+		font-family: norwester;
+		font-size: 52px;
+		color:#333333;
+		border-bottom:3px solid #FE8C24;
+	}
+
+	#contact-address h2 {
+		font-family: norwester;
+		font-size: 42px;
+		color:#333333;
+		margin-bottom:20px;
+	}
+
+	#contact-address em {
+		font-size: 32px;
+		font-family: dosis;
+		color:#333333;
+	}
+
+	#contact-address h3 {
+		font-family: norwester;
+		color:#FE8C24;
+		margin-bottom:40px;
+		font-size: 42px;
+	}
+
+	#map_canvas {
+		width:100%;
+		height:400px;
+	}
+
+	#contact-form h1 {
+		font-family: norwester;
+		font-size: 42px;
+		/*margin:0px;*/
+		color:#333333;
+		border-bottom: 2px solid #FE8C24;
+	}
+
+	#contact-form {
+		width:100%;
+		/*font-family: norwester;
+		color:#333333;
+		font-size: 32px;*/
+		margin:0px auto;
+	}
+
+	.contact-input {
+		width:80%;
+		height:50px;
+		border:1px solid #333333;
+		font-size: 32px;
+		color:#333333;
+		font-family: dosis;
+		margin:8px 0px;
+	}
+
+	.contact-input:focus {
+		outline: none !important;
+    	border:1px solid #FE8C24;
+	}
+
+	#contact-message {
+		width:80%;
+		height:200px;
+		padding:0px;
+	}
+
+	#contact-submit {
+		width:50%;
+		height:50px;
+		background-color: #FFFAEE;
+		border:1px solid #FE8C24;
+		font-family: dosis;
+		font-size: 36px;
+		margin:25px 0px;
+		margin-top:25px;
+	}
+
+	#contact-submit:focus {
+		outline: none !important;
+    	border:1px solid #FE8C24;
+	}
+
+	#email-message h1 {
+		font-size: 32px;
+		font-family: norwester;
+		color:#FE8C24;
+	}
+
+	.error {
+		color:#FE8C24;
+		font-size: 30px;
+		font-family: dosis;
+	}
+
+	.label {
+		font-family: norwester;
+		color:#333333;
+		font-size: 32px;
+	}
+
+}
+
+@media only all and (min-device-width: 970px) and (max-device-width: 1199px) {
+	#contact-content {
+		margin-top:25px;
+		width:94%;
+		border:2px solid #333333;
+		padding:3%;
+	}
+
+	#contact-info {
+		float:left;
+		/*display: inline-block;*/
+		width:50%;
+		padding-right: 5%;
+		border-right: 2px solid #333333;
+		/*background-color: purple;*/
+	}
+
+	#map_canvas {
+		width:100%;
+		height:290px;
+		border:2px solid #333333;
+	}
+
+	#contact-address h1{
+		margin:0px;
+		font-size: 26px;
+		font-family: norwester;
+		color:#333333;
+		border-bottom: 2px solid #FE8C24;
+	}
+
+	#contact-address h2{
+		font-family: norwester;
+		color:#333333;
+		margin-bottom: 0px;
+	}
+
+	#contact-address h3 {
+		font-family: norwester;
+		color:#FE8C24;
+		margin-bottom:40px;
+		font-size: 32px;
+	}
+
+	#contact-address em {
+		font-family: dosis;
+		color:#333333;
+		font-size: 22px;
+	}
+
+	#contact-form {
+		display: inline-block;
+		width:39%;
+		margin-left:5%;
+		/*background-color: green;*/
+	}
+
+	.contact-input {
+		width:100%;
+		height:30px;
+		border:1px solid #333333;
+		font-size: 18px;
+		color:#333333;
+		font-family: dosis;
+		margin:8px 0px;
+	}
+
+	.contact-input:focus {
+		outline: none !important;
+    	border:2px solid #FE8C24;
+	}
+
+	#contact-submit {
+		width:80px;
+		height:30px;
+		background-color: #FFFAEE;
+		border:1px solid #FE8C24;
+		float: right;
+		font-family: dosis;
+		font-size: 16px;
+	}
+
+	#contact-submit:focus {
+		outline: none !important;
+    	border:2px solid #FE8C24;
+	}
+
+	#contact-form h1 {
+		font-family: norwester;
+		font-size: 26px;
+		margin:0px;
+		margin-bottom: 25px;
+		color:#333333;
+		border-bottom: 2px solid #FE8C24;
+	}
+
+	#contact-message {
+		width:100%;
+		height:200px;
+		padding:0px;
+	}
+
+	#email-message h1 {
+		font-size: 32px;
+		font-family: norwester;
+		color:#FE8C24;
+	}
+
+	.error {
+		color:#FE8C24;
+		font-size: 22px;
+		font-family: dosis;
+	}
+
+	.label {
+		font-family: norwester;
+		color:#333333;
+		font-size: 24px;
+	}
+}
+
 @media only all and (min-device-width: 1200px) {
-	/*#header-container {
-		background-image: url(../images/contact/updoc-business-card-2.jpg);
-	}*/
 
 	#contact-content {
 		margin-top:25px;
@@ -96,11 +364,6 @@
 	#contact-form {
 		display: inline-block;
 		width:320px;
-		/*font-family: norwester;
-		color:#333333;
-		font-size: 24px;*/
-		/*margin-left:32px;
-		margin-right:32px;*/
 		margin:22px 22px 22px 32px;
 	}
 
@@ -149,6 +412,11 @@
 		float: right;
 		font-family: dosis;
 		font-size: 16px;
+	}
+
+	#contact-submit:focus {
+		outline: none !important;
+    	border:2px solid #FE8C24;
 	}
 
 	#map_canvas {
